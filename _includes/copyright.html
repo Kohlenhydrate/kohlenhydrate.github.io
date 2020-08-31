@@ -1,0 +1,60 @@
+<!-- Copyright -->
+
+<p class="copyright" style="text-align: right; font-size: small; margin-top: 1.5em;">
+	{% if page.copyright == 'NO' %}
+		<u><strong>本文禁止转载</strong></u>
+	{% else %}
+		<u>
+		本文遵守 
+		<a id="copyright-link" name="{{ page.copyright }}"></a>
+		许可协议
+		</u>
+	{% endif %}
+</p>
+
+<script>
+(function() {
+	var cc = document.getElementById('copyright-link');
+	if(!cc) return;
+	var cc_type = cc.getAttribute('name');
+	var cc_map = {
+		"BY": {
+			name: "Attribution 4.0 International",
+			short_name: "CC BY 4.0",
+			link: "https://creativecommons.org/licenses/by/4.0/"
+		},
+		"BY-NC": {
+			name: "Attribution-NonCommercial 4.0 International",
+			short_name: "CC BY-NC 4.0",
+			link: "https://creativecommons.org/licenses/by-nc/4.0/"
+		},
+		"BY-ND": {
+			name: "Attribution-NoDerivatives 4.0 International",
+			short_name: "CC BY-ND 4.0",
+			link: "https://creativecommons.org/licenses/by-nd/4.0/"
+		},
+		"BY-NC-ND": {
+			name: "Attribution-NonCommercial-NoDerivatives 4.0 International",
+			short_name: "CC BY-NC-ND 4.0",
+			link: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+		},
+		"BY-SA": {
+			name: "Attribution-ShareAlike 4.0 International",
+			short_name: "CC BY-SA 4.0",
+			link: "https://creativecommons.org/licenses/by-sa/4.0/"
+		},
+		"BY-NC-SA": {
+			name: "Attribution-NonCommercial-ShareAlike 4.0 International",
+			short_name: "CC BY-NC-SA 4.0",
+			link: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+		}
+	};
+
+	if(!cc_map[cc_type])
+		return;
+
+	cc_type = cc_map[cc_type];
+	cc.innerText = cc_type.short_name;
+	cc.setAttribute('href', cc_type.link);
+})();
+</script>
