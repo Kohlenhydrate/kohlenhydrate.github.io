@@ -1,10 +1,10 @@
 # Site settings
-title: Miskcoo's Space
-SEOTitle: Miskcoo's Space
+title: 夜雨花明
+SEOTitle: 夜雨花明
 header-img: img/home-bg.jpg
-email: miskcoo@gmail.com
-description: "这里是 @miskcoo 的个人博客。"
-keyword: "miskcoo, miskcoo's space, 博客, 个人网站"
+email: grufo1234@163.com
+description: "存档地，避难所"
+keyword: "夜雨花明, 简中同人, 博客, 个人网站"
 url: "http://blog.miskcoo.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 default_author: miskcoo
@@ -99,18 +99,3 @@ service-worker: true
 # MathJax rendering for layout:page (e.g. post preview)
 page-mathjax: false
 
-
-
-# Friends
-friends: [
-    {
-        title: "Harry Chen",
-        href: "https://harrychen.xyz/"
-    }, {
-        title: "Jiayi Weng",
-        href: "http://trinkle23897.github.io/"
-    }, {
-        title: "Hzwer",
-        href: "http://hzwer.com/"
-    }
-]
