@@ -5,9 +5,9 @@ header-img: img/home-bg.jpg
 email: grufo1234@163.com
 description: "存档地，避难所"
 keyword: "夜雨花明, 简中同人, 博客, 个人网站"
-url: "http://blog.miskcoo.com"              # your host, for absolute URL
+url:                  # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
-default_author: miskcoo
+default_author: 
 
 # Publish posts or collection documents with a future date.
 future: true
@@ -15,9 +15,9 @@ future: true
 # SNS settings
 RSS: true
 #weibo_username:     huxpro
-zhihu_username:     miskcoo
-github_username:    miskcoo
-twitter_username:   miskcoo
+#zhihu_username:     
+#github_username:    
+#twitter_username:   
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -60,7 +60,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: miskcoo
+disqus_username: 
 
 # Netease settings
 netease_comment: false
@@ -72,8 +72,8 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-42145830-2'            # Format: UA-xxxxxx-xx
-ga_domain: blog.miskcoo.com
+#ga_track_id:            # Format: UA-xxxxxx-xx
+#ga_domain: 
 
 
 
